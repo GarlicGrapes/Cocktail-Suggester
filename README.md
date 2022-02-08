@@ -1,1 +1,1 @@
-# Cocktail-Suggester
+# Cocktail Suggester
