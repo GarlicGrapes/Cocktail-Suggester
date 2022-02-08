@@ -1,1 +1,1 @@
-# Cocktail-Suggester
+# MTG Card Selector
