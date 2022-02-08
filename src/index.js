@@ -6,10 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function getCocktails() {
 //    const ul = document.getElementById('cocktail-list')
-    fetch( 'https://www.thecocktaildb.com/api/json/v1/1/search.php?i=vodka')
-        // mode: 'cors',
- //      credentials: 'include'
-    
+    fetch( 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=')
     .then(res => res.json())
     .then(data => console.log(data))
 }
