@@ -13,14 +13,14 @@ body  {
 
 #title {
     font-family: "Helvetica Neue", Papyrus, Copperplate,'Arial Narrow', Arial, sans-serif;
-    position: fixed;
-    font-size: 70px;
+    position: absolute;
+    font-size: 10vh;
     left: 20%;
     top:10px
 }
 
 #foot {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 42%;
     left: 42%;
@@ -28,9 +28,39 @@ body  {
 }
 
 #cocktail-list-parent {
-    position: fixed;
+    position: absolute;
     top: 180px;
     left: 20%;
     font-size: 30px;
 
+}
+
+
+#reroll {
+    background-color:#A2FAC9;
+    position: absolute;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #71A38D;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#71A38D;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+#reroll:hover {
+    border-radius: 0px;
+    background-color: #8F5FAD; 
+    color:#A2FAC9;
+}
+
+li:hover {
+    border-radius: 0px;
+    background-color: #8F5FAD; 
+    color:#A2FAC9; 
 }
