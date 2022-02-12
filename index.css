@@ -1,0 +1,28 @@
+body  {
+    text-align: left;
+    color: #8F5FAD;
+    background-color: #A2FAC9;
+}
+
+#title {
+    font-family: "Helvetica Neue", Papyrus, Copperplate,'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    font-size: 150px;
+    left: 20%;
+    top:10px
+}
+
+#foot {
+    position: fixed;
+    bottom: 0;
+    right: 42%;
+    left: 42%;
+    width: 16%;
+}
+
+#cocktail-list-parent {
+    top: 180px;
+    left: 20%;
+    font-size: 30px;
+
+}

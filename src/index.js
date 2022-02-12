@@ -63,16 +63,19 @@ const displayDrinkDetails = (event) => {
 
 function buildIngredientsList(drink) {
     let list = ""
-    if (drink.strIngredient1 == true) {list += `<li>${drink.strMeasure1} ${drink.strIngredient1}</li>`}
-    if (drink.strIngredient2 == true) {list += `<li>${drink.strMeasure2} ${drink.strIngredient2}</li>`}
-    if (drink.strIngredient3 == true) {list += `<li>${drink.strMeasure3} ${drink.strIngredient3}</li>`}
-    if (drink.strIngredient4 == true) {list += `<li>${drink.strMeasure4} ${drink.strIngredient4}</li>`}
-    if (drink.strIngredient5 == true) {list += `<li>${drink.strMeasure5} ${drink.strIngredient5}</li>`}
-    if (drink.strIngredient6 == true) {list += `<li>${drink.strMeasure6} ${drink.strIngredient6}</li>`}
-    if (drink.strIngredient7 == true) {list += `<li>${drink.strMeasure7} ${drink.strIngredient7}</li>`}
-    if (drink.strIngredient8 == true) {list += `<li>${drink.strMeasure8} ${drink.strIngredient8}</li>`}
-    if (drink.strIngredient9 == true) {list += `<li>${drink.strMeasure9} ${drink.strIngredient9}</li>`}
-    if (drink.strIngredient10 == true) {list += `<li>${drink.strMeasure10} ${drink.strIngredient10}</li>`}
+    console.log(drink)
+    console.log(drink.strIngredient1)
+    console.log(drink == true)
+    if (drink.strIngredient1 != undefined) {list += `<li>${drink.strMeasure1} ${drink.strIngredient1}</li>`}
+    if (drink.strIngredient2 != undefined) {list += `<li>${drink.strMeasure2} ${drink.strIngredient2}</li>`}
+    if (drink.strIngredient3 != undefined) {list += `<li>${drink.strMeasure3} ${drink.strIngredient3}</li>`}
+    if (drink.strIngredient4 != undefined) {list += `<li>${drink.strMeasure4} ${drink.strIngredient4}</li>`}
+    if (drink.strIngredient5 != undefined) {list += `<li>${drink.strMeasure5} ${drink.strIngredient5}</li>`}
+    if (drink.strIngredient6 != undefined) {list += `<li>${drink.strMeasure6} ${drink.strIngredient6}</li>`}
+    if (drink.strIngredient7 != undefined) {list += `<li>${drink.strMeasure7} ${drink.strIngredient7}</li>`}
+    if (drink.strIngredient8 != undefined) {list += `<li>${drink.strMeasure8} ${drink.strIngredient8}</li>`}
+    if (drink.strIngredient9 != undefined) {list += `<li>${drink.strMeasure9} ${drink.strIngredient9}</li>`}
+    if (drink.strIngredient10 != undefined) {list += `<li>${drink.strMeasure10} ${drink.strIngredient10}</li>`}
     return list
 }
 
