@@ -86,7 +86,6 @@ const ingredientChecker = (ingredient) => {
 async function fetchCocktails(requestType) {
     //calls API and returns desired drink object
     let res = await fetch(baseUrl + requestType )
-    console.log(res)
     let data = await res.json()
     return data
 }
