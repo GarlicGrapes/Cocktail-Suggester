@@ -9,9 +9,8 @@ body  {
     list-style-type: none;
     left:20vh;
     right:20vh;
-    background: rgb(162,250,201);
-    background: linear-gradient(133deg, rgba(162,250,201,1) 0%, rgba(162,250,201,1) 15%, rgba(116,179,144,1) 100%);
-
+    background: rgb(46,17,20);
+    background: linear-gradient(315deg, rgba(46,17,20,1) 0%, rgba(80,27,29,1) 36%);
 }
 
 a {
@@ -44,7 +43,6 @@ a:hover {
 #reroll {
     font-size: 3vh;
     left: 20vh;
-    background-color:#A2FAC9;
     position: absolute;
     display:inline-block;
     padding:0.35em 1.2em;
@@ -58,6 +56,7 @@ a:hover {
     color:#71A38D;
     text-align:center;
     transition: all 0.2s;
+    background: rgb(162,250,201);
 }
 
 #reroll:hover {
