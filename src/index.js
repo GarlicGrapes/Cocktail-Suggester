@@ -2,10 +2,11 @@ const baseUrl = 'https://www.thecocktaildb.com/api/json/v1/1/'
 
 window.addEventListener('DOMContentLoaded', () => {
     generateCocktails()
-    buildRerollButton()
+    buildRerollButtonListener()
 })
 
 async function generateCocktails() {
+    //appends list of 3 random cocktail links to body
     const ul = document.getElementById('cocktail-list')
     let addedToList = 0
     while (addedToList < 3) {
@@ -20,14 +21,18 @@ async function generateCocktails() {
     }
     }
 
+
 const attachClicksToDrinkList = () => {
+    //adds click listeners to drinks on page
     const drinks = document.querySelectorAll('a')
     drinks.forEach((drink) => {
         drink.addEventListener('click', displayDrinkDetails)
     })
     }
 
+
 const displayDrinkDetails = (event) => {
+    //replaces body with details of the clicked drink
     const drinkId = event.target.dataset.id
     const ul = document.getElementById('cocktail-list')
     fetchCocktails("lookup.php?i=" + drinkId)
@@ -53,6 +58,7 @@ const displayDrinkDetails = (event) => {
 }
 
 const buildIngredientsList = (drink) => {
+    //builds a list of ingredients html
     let list = ""
     if (ingredientChecker(drink.strIngredient1) === true) {list += `${drink.strMeasure1} ${drink.strIngredient1}<br>`}
     if (ingredientChecker(drink.strIngredient2) === true) {list += `${drink.strMeasure2} ${drink.strIngredient2}<br>`}
@@ -67,7 +73,19 @@ const buildIngredientsList = (drink) => {
     return list
 }
 
+const ingredientChecker = (ingredient) => {
+    //checks to see if ingredient exists/has value
+        if (ingredient != undefined && ingredient != null){
+            if(ingredient.length > 0) {
+                return true
+            }
+        }
+        return false
+    }
+   
+
 async function fetchCocktails(requestType) {
+    //calls API and returns desired drink object
     let res = await fetch(baseUrl + requestType )
     console.log(res)
     let data = await res.json()
@@ -75,25 +93,18 @@ async function fetchCocktails(requestType) {
 }
 
 let isCocktail = (bev) => bev === "Cocktail" || bev === "Ordinary Drink"
+    //validates that drink is cocktail instead of other category
 
-const ingredientChecker = (ingredient) => {
-//checks to see if ingredient exists/has value
-    if (ingredient != undefined && ingredient != null){
-        if(ingredient.length > 0) {
-            return true
-        }
-    }
-    return false
-}
 
 function reroll() {
+    //clears body and generates a new list of cocktail suggestions
     const ul = document.getElementById('cocktail-list')
     ul.innerHTML = ""
     generateCocktails()
-
 }
 
-function buildRerollButton() {
+function buildRerollButtonListener() {
+    //builds click listener for reroll button
     const button = document.getElementById('reroll')
     button.addEventListener('click', reroll)
 }

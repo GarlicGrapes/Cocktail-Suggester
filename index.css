@@ -5,10 +5,13 @@ body  {
     min-height: 100vh;
     text-align: left;
     color: #8F5FAD;
-    background-color: #A2FAC9;
+    
     list-style-type: none;
     left:20vh;
     right:20vh;
+    background: rgb(162,250,201);
+    background: linear-gradient(133deg, rgba(162,250,201,1) 0%, rgba(162,250,201,1) 15%, rgba(116,179,144,1) 100%);
+
 }
 
 a {
