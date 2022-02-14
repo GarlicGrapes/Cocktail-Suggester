@@ -14,6 +14,7 @@ body  {
 }
 
 a {
+    grid-row: 2;
     color:#FFFFFF;
     transition: all 0.2s;
 }
@@ -23,12 +24,13 @@ a:hover {
 }
 
 #title {
-    grid-column: span 3;
     font-family: "Helvetica Neue", Papyrus, Copperplate,'Arial Narrow', Arial, sans-serif;
     position: absolute;
     font-size: 9vh;
-    left: 20%;
+    left: 20vh;
+    right: 20vh;
     top:0px;
+    display:inline-block;
 }
 
 #cocktail-list-parent {
@@ -37,6 +39,7 @@ a:hover {
     left: 40vh;
     right: 40vh;
     font-size: 3vh;
+    display:inline-block;
 
 }
 
@@ -44,7 +47,7 @@ a:hover {
     font-size: 3vh;
     left: 20vh;
     position: absolute;
-    display:inline-block;
+    display:block;
     padding:0.35em 1.2em;
     border:0.1em solid #64485c;
     margin:0 10em 0.5em 0;
