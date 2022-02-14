@@ -6,12 +6,13 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 async function generateCocktails() {
-    //appends list of 3 random cocktail links to body
+    //appends list of 3 random cocktail links to HTML "cocktail-list" div
     const drinkListHtml = document.getElementById('cocktail-list')
     let addedToList = 0
     while (addedToList < 3) {
         await fetchCocktails('random.php')
         .then(data => {
+            console.log(data)
             if (isCocktail(data.drinks[0].strCategory) === true) {
                 drinkListHtml.innerHTML += `<li><a href="#" data-id="${data.drinks[0].idDrink}">${data.drinks[0].strDrink}</a></li>`
                 addedToList ++
