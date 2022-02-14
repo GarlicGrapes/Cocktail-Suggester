@@ -19,14 +19,14 @@ a {
 }
 
 a:hover {
-    background-color: #DEB2F0; 
-    color:#A2FAC9; 
+    color:#83677B; 
 }
 
 #title {
+    grid-column: span 3;
     font-family: "Helvetica Neue", Papyrus, Copperplate,'Arial Narrow', Arial, sans-serif;
     position: absolute;
-    font-size: 10vh;
+    font-size: 9vh;
     left: 20%;
     top:0px;
 }
