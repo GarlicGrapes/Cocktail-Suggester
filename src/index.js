@@ -34,11 +34,11 @@ const attachClicksToDrinkList = () => {
 const displayDrinkDetails = (event) => {
     //replaces body with details of the clicked drink
     const drinkId = event.target.dataset.id
-    const ul = document.getElementById('cocktail-list')
+    const drinkListHtml = document.getElementById('cocktail-list')
     fetchCocktails("lookup.php?i=" + drinkId)
     .then(data => {
         const drinkPrefix = data.drinks[0]
-        ul.innerHTML = `
+        drinkListHtml.innerHTML = `
         <img src=${drinkPrefix.strDrinkThumb} alt=Image of ${drinkPrefix.strDrink} height = "25%" width = "25%">
         <br>
         <strong>${drinkPrefix.strDrink}</strong>   
