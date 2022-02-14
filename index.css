@@ -4,7 +4,7 @@ body  {
     grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
     text-align: left;
-    color: #8F5FAD;
+    color: #FFFFFF;
     
     list-style-type: none;
     left:20vh;
@@ -14,7 +14,7 @@ body  {
 }
 
 a {
-    color:#8F5FAD;
+    color:#FFFFFF;
     transition: all 0.2s;
 }
 
@@ -46,22 +46,22 @@ a:hover {
     position: absolute;
     display:inline-block;
     padding:0.35em 1.2em;
-    border:0.1em solid #71A38D;
+    border:0.1em solid #64485c;
     margin:0 10em 0.5em 0;
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
     font-family:'Roboto',sans-serif;
     font-weight:300;
-    color:#71A38D;
+    color:#ffffff;
     text-align:center;
     transition: all 0.2s;
-    background: rgb(162,250,201);
+    background: #83677B;
 }
 
 #reroll:hover {
     border-radius: 0px;
-    background-color: #DEB2F0; 
+    background-color: #64485c; 
     color:#A2FAC9;
 }
 
