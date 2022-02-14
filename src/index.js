@@ -45,15 +45,13 @@ const displayDrinkDetails = (event) => {
         <br>
         <br>
         <strong><u>Ingredients:</u></strong>
-        <br>
+        <br>                        
         ${buildIngredientsList(drinkPrefix)}
         <br>
         <strong><u>Instructions:</u></strong>
         <br>
         ${drinkPrefix.strInstructions}
         `
-
-
     })
 }
 
